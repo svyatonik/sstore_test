@@ -1,2 +1,4 @@
 parity
+ethstore
+core
 db.*
