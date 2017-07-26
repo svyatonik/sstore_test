@@ -1,3 +1,4 @@
+stress_test/*.toml
 parity
 ethstore
 core
