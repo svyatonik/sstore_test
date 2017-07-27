@@ -17,8 +17,8 @@ do
 	if [ "$i" -eq 1 ]; then
 		sstore_http_port[i]=8082
 	fi
-	secret[i]=`cat key | grep priv -A 3 | tail -n +2 | tr -d '\n[:space:]:' | sed 's/^00//'`
-	public[i]=`cat key | grep pub -A 5 | tail -n +2 | tr -d '\n[:space:]:' | sed 's/^04//'`
+	secret[i]=`cat key | grep priv -A 3 | tail -n +2 | tr -d '\n[:space:]:' | sed 's/^00//'|xargs -0 printf "%64s"|tr ' ' '0'`
+	public[i]=`cat key | grep pub -A 5 | tail -n +2 | tr -d '\n[:space:]:' | sed 's/^04//'|xargs -0 printf "%64s"|tr ' ' '0'`
 	enode[i]="\"enode://${public[i]}@127.0.0.1:${network_port[i]}\""
 	ssnode[i]="\"${public[i]}@127.0.0.1:${sstore_internal_port[i]}\""
 done
