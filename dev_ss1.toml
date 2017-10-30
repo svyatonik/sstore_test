@@ -33,6 +33,8 @@ disable_periodic = true
 
 [secretstore]
 disable = false
+disable_http = false
+disable_acl_check = true
 self_secret = "6c26a76e9b31048d170873a791401c7e799a11f0cefc0171cc31a49800967509"
 nodes = ["cac6c205eb06c8308d65156ff6c862c62b000b8ead121a4455a8ddeff7248128d895692136f240d5d1614dc7cc4147b1bd584bd617e30560bb872064d09ea325@127.0.0.1:8085", "6b8d9b9ecde2f0d8c7b2685dd10d181000fa0b26462674dece3096488d6b8d6e3c0e4e1262e3f0eb3b997783b3d6471c281905c5fafeb7908f3aeb7326274db6@127.0.0.1:8087"]
 interface = "local"

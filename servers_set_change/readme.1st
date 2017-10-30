@@ -1,0 +1,29 @@
+1. 4 nodes in network (bootnodes): 30303, 30304, 30305, 30306
+2. every nodes is running KeyServer
+3. change servers_set contract to: 30303, 30304
+4. wait until nodes are connected
+=== INITIAL_TEST ===
+1. add 2-of-2 key to current cluster (30303, 30304)
+2. check that key can be restored using any node without delegation
+=== NODE_ADD_TEST ===
+1. change servers_set contract to: 30303, 30304, 30305
+2. wait until nodes are connected
+3. check that key can be restored using node 30305 by using delegation
+4. run ServersSetChange session from (30303, 30304, 30305) to (30303, 30304, 30305)
+5. check that key can be restored using node 30305 without delegation
+=== NODE_MOVE_TEST ===
+1. change servers_set contract to: 30303, 30304, 30305, 30306
+2. wait until nodes are connected
+3. check that key can be restored using node 30306 by using delegation
+4. run ServersSetChange session from (30303, 30304, 30305, 30306) to (30304, 30305, 30306)
+5. check that key can be restored using node 30306 without delegation
+6. check that key can be restored using node 30303 by using delegation
+7. change servers_set contract to: 30304, 30305, 30306
+8. wait until nodes are connected
+9. check that key can NOT be restored using node 30303
+=== NODE_REMOVE_TEST ===
+1. run ServersSetChange session from (30304, 30305, 30306) to (30305, 30306)
+2. check that key can be restored using node 30304 by using delegation
+3. change servers_set contract to: 30305, 30306
+4. wait until nodes are connected
+5. check that key can NOT be restored using node 30304

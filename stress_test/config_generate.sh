@@ -73,6 +73,7 @@ disable_periodic = true
 
 [secretstore]
 disable = false
+disable_acl_check = true
 self_secret = \"${secret[i]}\"
 nodes = [$ssnodes]
 interface = \"local\"

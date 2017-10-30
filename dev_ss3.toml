@@ -33,10 +33,10 @@ disable_periodic = true
 
 [secretstore]
 disable = false
+disable_http = true
+disable_acl_check = true
 self_secret = "5ab6ed2a52c33142380032c39a03a86b12eacb3fa4b53bc16d84f51318156f8c"
 nodes = ["d01355a9e8858242ae190208716c48734a5bd2c417b0a9181bc563a18c8ca538cd095d8ab383ed62fba4872c5bd86bad1e82d015e6eabae18546c998d5621923@127.0.0.1:8083", "cac6c205eb06c8308d65156ff6c862c62b000b8ead121a4455a8ddeff7248128d895692136f240d5d1614dc7cc4147b1bd584bd617e30560bb872064d09ea325@127.0.0.1:8085"]
 interface = "local"
 port = 8087
-http_interface = "local"
-http_port = 8086
 path = "db.dev_ss3/secretstore"
