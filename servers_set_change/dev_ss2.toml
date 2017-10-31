@@ -1,0 +1,51 @@
+[parity]
+chain = "dev"
+base_path = "db.dev_ss2"
+
+[account]
+password = ["password.file"]
+
+[ui]
+disable = true
+
+[rpc]
+disable = true
+
+[ipc]
+disable = true
+
+[websockets]
+disable = true
+
+[dapps]
+disable = true
+
+[network]
+port = 30304
+node_key = "a5163f01a3a8be6d64863fbbf89d2df55ac0165afcde3fee47822904b56756a2"
+bootnodes = [
+	"enode://cf5586ac98f211c7ef9d306ba0cf5d272909f709c00ace95eed96da11d845ee5cb3ee1694023c4a585e130f905c4f65c67b8021957146153f7bc546e2a8b44f6@127.0.0.1:30303",
+	"enode://a7cc7a8ef336189c2bfabfeab8eed55598fa2b480adf98eeb66e006f2811319550222122bd37fb25dbc35709ccd5d9793dc829d208b73ffbce893d63a393101b@127.0.0.1:30305",
+	"enode://54319671ca191b9e08e2064d8b9eaa43cb246e698dc7d995d557ebef3428dc69b93ca3caa20c43552414132448425c9333aa33b2231caa082ddcec7e12a56963@127.0.0.1:30306",
+]
+
+[ipfs]
+enable = false
+
+[snapshots]
+disable_periodic = true
+
+[secretstore]
+disable = false
+disable_acl_check = true
+self_secret = "a5163f01a3a8be6d64863fbbf89d2df55ac0165afcde3fee47822904b56756a2"
+interface = "local"
+nodes = [
+	"a7cc7a8ef336189c2bfabfeab8eed55598fa2b480adf98eeb66e006f2811319550222122bd37fb25dbc35709ccd5d9793dc829d208b73ffbce893d63a393101b@127.0.0.1:8087",
+	"54319671ca191b9e08e2064d8b9eaa43cb246e698dc7d995d557ebef3428dc69b93ca3caa20c43552414132448425c9333aa33b2231caa082ddcec7e12a56963@127.0.0.1:8089"
+]
+port = 8085
+http_interface = "local"
+http_port = 8084
+path = "db.dev_ss2/secretstore"
+admin_public = "002cad13cf0aeb7f5f7c4cda5dd677902c24f2167e0edefdcc4434286825746cf8d46d705b150b006c3a96c905cd9d1a88e4ed61b99212836011c627959fb431"

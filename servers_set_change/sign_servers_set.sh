@@ -1,0 +1,3 @@
+#!/bin/bash
+# {"jsonrpc":"2.0","result":"0xc967a2a411582803a2597afd86cc98c30032c37eb343816fa931be41120a335a1766d8e4d5551d60157090ed0b941a19ddf904616622a1c59f4ea0404107796401","id":1}
+curl --data-binary '{"jsonrpc": "2.0", "method": "secretstore_signServersSet", "params": ["0xE3b68C48CE837236EDdF70dA0D817c3746732982", "AdminAccount", ["0xa7cc7a8ef336189c2bfabfeab8eed55598fa2b480adf98eeb66e006f2811319550222122bd37fb25dbc35709ccd5d9793dc829d208b73ffbce893d63a393101b", "0x54319671ca191b9e08e2064d8b9eaa43cb246e698dc7d995d557ebef3428dc69b93ca3caa20c43552414132448425c9333aa33b2231caa082ddcec7e12a56963"]], "id":1 }' -H 'Content-type: application/json' http://127.0.0.1:8545/
