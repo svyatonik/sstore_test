@@ -1,0 +1,5 @@
+db.*
+poa_*
+password_file
+validators_set_contract*
+node_modules
