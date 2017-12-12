@@ -146,6 +146,7 @@ disable_periodic = true
 [secretstore]
 disable = false
 disable_acl_check = true
+service_contract = \"registry\"
 self_secret = \"${secret[i]}\"
 nodes = [$ssnodes]
 interface = \"local\"
