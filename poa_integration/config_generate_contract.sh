@@ -144,6 +144,7 @@ port = ${sstore_internal_port[i]}
 http_interface = \"local\"
 http_port = ${sstore_http_port[i]}
 path = \"db.poa_ss${i}/secretstore\"
+service_contract = \"registry\"
 
 [mining]
 author = \"${addresses[i]}\"

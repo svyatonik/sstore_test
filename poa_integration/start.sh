@@ -1,5 +1,4 @@
 NUM_NODES=`ls -1 | grep .toml | wc -l`
-echo $NUM_NODES
 
 #NUM_NODES=$(($NUM_NODES-1))
 
