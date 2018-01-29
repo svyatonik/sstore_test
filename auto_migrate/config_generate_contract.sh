@@ -15,7 +15,7 @@
 
 function join_by { local IFS="$1"; shift; echo "$*"; }
 
-NUM_AUTHORITIES=3
+NUM_AUTHORITIES=4
 NUM_REGULAR=0
 NUM_NODES=$(($NUM_AUTHORITIES+$NUM_REGULAR))
 UI_PORT_BASE=8180

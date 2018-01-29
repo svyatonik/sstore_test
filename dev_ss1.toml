@@ -7,6 +7,7 @@ disable = false
 
 [rpc]
 disable = false
+apis = ["all"]
 
 [ipc]
 disable = true
@@ -40,5 +41,5 @@ nodes = ["cac6c205eb06c8308d65156ff6c862c62b000b8ead121a4455a8ddeff7248128d89569
 interface = "local"
 port = 8083
 http_interface = "local"
-http_port = 8082
+http_port = 8082	
 path = "db.dev_ss1/secretstore"
