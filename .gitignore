@@ -4,3 +4,4 @@ parity
 ethstore
 core
 db.*
+node_modules

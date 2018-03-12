@@ -143,6 +143,10 @@ http_interface = \"local\"
 http_port = ${sstore_http_port[i]}
 path = \"db.poa_ss${i}/secretstore\"
 service_contract = \"registry\"
+service_contract_srv_gen = \"registry\"
+service_contract_srv_retr = \"registry\"
+service_contract_doc_store = \"registry\"
+service_contract_doc_sretr = \"registry\"
 
 [mining]
 author = \"${addresses[i]}\"
@@ -253,7 +257,7 @@ poa_chain_contents='
 			}
 		},
 		"difficulty": "0x20000",
-		"gasLimit": "0x5B8D80"
+		"gasLimit": "0xFFFFFF"
 	},
 	"accounts": {
 		"0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
