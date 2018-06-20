@@ -5,4 +5,5 @@ NUM_NODES=`ls -1 | grep .toml | wc -l`
 for i in `seq 1 $NUM_NODES`
 do
 	RUST_LOG=secretstore=trace,secretstore_net=trace ../parity --config ./poa_ss${i}.toml&
+#	RUST_LOG=network=trace ../parity --config ./poa_ss${i}.toml&
 done

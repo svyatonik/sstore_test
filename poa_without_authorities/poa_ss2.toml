@@ -1,0 +1,48 @@
+
+# node#2 (authority)
+# self_secret: b30f601e9e62fe0807ddad1b9c34da09314266d515adbb74b23bb960811c168b
+# self_public: 2ef32bd28c02cd991f01237804009544f2a6acb50c4cd2c2be01338cc646abe6de5f3b5ab9da75b1f9a4b4a1ed2699cfcfd039bd3ae351853da2c7e9aac45b41
+
+[parity]
+chain = "poa_chain.json"
+base_path = "db.poa_ss2"
+
+[ui]
+force = false
+disable = true
+
+[rpc]
+disable = true
+
+[websockets]
+disable = true
+
+[ipc]
+disable = true
+
+[dapps]
+disable = true
+
+[network]
+port = 10001
+node_key = "b30f601e9e62fe0807ddad1b9c34da09314266d515adbb74b23bb960811c168b"
+bootnodes = ["enode://f5394e8c6f1276e513a893f39be191c483a9039a0fed47ef07bd8f695bfd2f75d9b804843ada279b27560af32f211951072700340a679351aace72a0756761ce@127.0.0.1:10000","enode://9bd3113c4573576b30dbd50e755d5254013d2ea8302f32f16cd9650bfe6e806c9d9d6342d4593cf8b187ee2b22b56ec1564789cfa6aba28cf596da7c399d2ace@127.0.0.1:10002"]
+
+[ipfs]
+enable = false
+
+[snapshots]
+disable_periodic = true
+
+[secretstore]
+disable = true
+
+[mining]
+author = "0xcc2e52d7879f3cb909e39eeef9f30f6d13fcf758"
+engine_signer = "0xcc2e52d7879f3cb909e39eeef9f30f6d13fcf758"
+force_sealing = true
+
+[account]
+unlock = ["0xcc2e52d7879f3cb909e39eeef9f30f6d13fcf758"]
+password = ["password_file"]
+

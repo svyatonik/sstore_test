@@ -1,0 +1,38 @@
+
+# node#1 (regular)
+# self_secret: 31e4c48977916365e1bbad421b298ef51ffbc27a197f7b2694735efb4e4b2466
+# self_public: 9bd3113c4573576b30dbd50e755d5254013d2ea8302f32f16cd9650bfe6e806c9d9d6342d4593cf8b187ee2b22b56ec1564789cfa6aba28cf596da7c399d2ace
+
+[parity]
+chain = "poa_chain.json"
+base_path = "db.poa_ss3"
+
+[ui]
+force = true
+disable = false
+port = 8180
+
+[rpc]
+disable = false
+port = 8545
+apis = ["all"]
+
+[websockets]
+disable = false
+port = 8600
+apis = ["all"]
+
+[ipc]
+disable = true
+
+[dapps]
+disable = false
+
+[network]
+port = 10002
+node_key = "31e4c48977916365e1bbad421b298ef51ffbc27a197f7b2694735efb4e4b2466"
+bootnodes = ["enode://f5394e8c6f1276e513a893f39be191c483a9039a0fed47ef07bd8f695bfd2f75d9b804843ada279b27560af32f211951072700340a679351aace72a0756761ce@127.0.0.1:10000","enode://2ef32bd28c02cd991f01237804009544f2a6acb50c4cd2c2be01338cc646abe6de5f3b5ab9da75b1f9a4b4a1ed2699cfcfd039bd3ae351853da2c7e9aac45b41@127.0.0.1:10001"]
+
+[secretstore]
+disable = true
+

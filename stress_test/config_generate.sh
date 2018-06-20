@@ -75,6 +75,7 @@ disable_periodic = true
 disable = false
 disable_acl_check = true
 self_secret = \"${secret[i]}\"
+server_set_contract = \"none\"
 nodes = [$ssnodes]
 interface = \"local\"
 port = ${sstore_internal_port[i]}
