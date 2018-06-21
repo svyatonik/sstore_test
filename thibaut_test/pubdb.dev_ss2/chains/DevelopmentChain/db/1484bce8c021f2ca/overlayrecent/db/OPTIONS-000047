@@ -23,7 +23,7 @@
   WAL_ttl_seconds=0
   WAL_size_limit_MB=0
   max_subcompactions=1
-  wal_dir=db.dev_ss2/chains/DevelopmentChain/db/1484bce8c021f2ca/overlayrecent/db
+  wal_dir=pubdb.dev_ss2/chains/DevelopmentChain/db/1484bce8c021f2ca/overlayrecent/db
   dump_malloc_stats=false
   db_log_dir=
   recycle_log_file_num=0
