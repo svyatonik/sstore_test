@@ -1,0 +1,53 @@
+[parity]
+chain = "dev"
+base_path = "pubdb.dev_ss1"
+
+[ui]
+disable = false
+
+[rpc]
+disable = false
+apis = ["all"]
+
+[ipc]
+disable = true
+
+[websockets]
+disable = false
+
+[dapps]
+disable = false
+
+[network]
+port = 30303
+bootnodes = [
+	"enode://cac6c205eb06c8308d65156ff6c862c62b000b8ead121a4455a8ddeff7248128d895692136f240d5d1614dc7cc4147b1bd584bd617e30560bb872064d09ea325@127.0.0.1:30304",
+	"enode://6b8d9b9ecde2f0d8c7b2685dd10d181000fa0b26462674dece3096488d6b8d6e3c0e4e1262e3f0eb3b997783b3d6471c281905c5fafeb7908f3aeb7326274db6@127.0.0.1:30305"
+]
+
+[ipfs]
+enable = false
+
+[snapshots]
+disable_periodic = true
+
+[secretstore]
+self_secret = "6fe74e132437594baba2454a3c7132050154b0c8"
+disable = false
+disable_http = false
+http_interface = "local"
+http_port = 8082
+acl_contract = "none"
+server_set_contract = "none"
+nodes = [
+	"116fbed39a6174640a2baf23f2d874dda037da9382bac7842c7dbe1a61b14947b235b571d73c5915206ab0b2f162f1069c2537c0e8480672006e0425be8b82f5@127.0.0.1:8083",
+	"9a390f9c68aa0a7b2e4cdac1bf668b08c1fba27f83f9eb8066d511d471e8923c660298b968100e0d31db015576fae96b4cfd0c6611d3bd4ff3b8ab90e7797ecc@127.0.0.1:8085",
+	"28a9bf97a20ff610f1debecbaeb66f219359d5cd108ff2d6554db811b1036c05a4add1a485a90878d5fda1d52b0063773cb506e64b6d2bad6bbc281ddc5bf608@127.0.0.1:8087"
+]
+interface = "local"
+port = 8083
+path = "db.ss1/secretstore"
+
+[account]
+unlock = ["0x6fe74e132437594baba2454a3c7132050154b0c8"]
+password = ["ss.pwd"]

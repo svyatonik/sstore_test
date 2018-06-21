@@ -1,0 +1,3 @@
+RUST_LOG=secretstore=trace,secretstore_net=trace ../parity --config ./ss1.toml&
+RUST_LOG=secretstore=trace,secretstore_net=trace ../parity --config ./ss2.toml&
+RUST_LOG=secretstore=trace,secretstore_net=trace ../parity --config ./ss3.toml&
